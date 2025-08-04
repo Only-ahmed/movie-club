@@ -17,7 +17,7 @@ const MovieDetails = ({ movies }) => {
             <div>
                 <div className='flexDiv'>
                     <div className='a25'>
-                        <img className='imgRouter' src={`https://image.tmdb.org/t/p/w500/` + movieID.poster_path} alt='img' />
+                        {/* <img className='imgRouter' src={`https://image.tmdb.org/t/p/w500/` + movieID.poster_path} alt='img' /> */}
                     </div>
                     <div className='a75'>
                         <p>اسم الفيلم : {movieID.title}</p>
