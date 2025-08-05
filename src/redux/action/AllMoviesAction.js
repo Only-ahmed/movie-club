@@ -7,7 +7,7 @@ export const fetchallmovies = () => async (dispatch) => {
                 dispatch({ type: "FETCH_VIDEOS", payload: respond.data.results });
             });
     } catch (error) {
-        console.log("error", error);
+        console.log("fetcherror", error);
     }
 }
 export const GetMovieDetails = (id) => async (dispatch) => {
@@ -17,7 +17,7 @@ export const GetMovieDetails = (id) => async (dispatch) => {
                 dispatch({ type: "singleMovie", payload: respond.data });
             });
     } catch (error) {
-        console.log("error", error);
+        console.log("single-movie error", error);
     }
 }
 export const Searchfunc = (word) => async (dispatch) => {
@@ -27,7 +27,7 @@ export const Searchfunc = (word) => async (dispatch) => {
                 dispatch({ type: "search", payload: respond.data.results });
             });
     } catch (error) {
-        console.log("error", error);
+        console.log("search error", error);
     }
 }
 

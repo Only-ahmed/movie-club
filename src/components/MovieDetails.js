@@ -12,8 +12,6 @@ const MovieDetails = ({ movies }) => {
     useEffect(() => {
         dispatch(GetMovieDetails(id))
     }, [dispatch, id])
-    console.log("id",id);
-    console.log("movieID", movieID);
     return (
         <div className='MainFlexDiv'>
             {movieID ?
