@@ -7,10 +7,6 @@ import { useEffect } from 'react';
 
 const CardTitle = () => {
     const movies = useSelector((state) => state.fetchvideos)
-    console.log(movies);
-    useEffect(() => {
-        console.log('Movies updated:', movies);
-    }, [movies]);
     return (
         <Row >
             {
