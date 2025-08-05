@@ -2,10 +2,15 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react';
 
 
 const CardTitle = () => {
     const movies = useSelector((state) => state.fetchvideos)
+    console.log(movies);
+    useEffect(() => {
+        console.log('Movies updated:', movies);
+    }, [movies]);
     return (
         <Row >
             {
